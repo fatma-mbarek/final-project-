@@ -1,0 +1,90 @@
+/* Style général du corps de la page */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ccd7ea;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* Style de la barre de navigation */
+nav {
+  background-color: #86abdb;
+  padding: 15px;
+}
+/* Style des boutons de navigation */
+nav button {
+  background-color: #ccd7ea;
+  border: none;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Effet au survol des boutons de navigation */
+nav button:hover {
+  background-color: #91aec3;
+}
+/* Style du conteneur principal du quiz */
+.quiz-container {
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #c4e0ee;
+  border-radius: 15px;
+  max-width: 500px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+}
+/* Style des images (drapeaux) */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+/* Style des boutons d'options de réponse */
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #5978a7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Effet au survol des options */
+.option-btn:hover {
+  background-color: #aac0d6;
+}
+/* Style du message de résultat */
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Style de l'affichage du score */
+#score-display {
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 18px;
+  color: #203254;
+}
+
+/* Style de la zone de contrôles */
+#controls {
+  margin-top: 20px;
+}
+/* Style des boutons Next et Show score */
+#next-btn, #score-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #203254;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* Effet au survol des boutons (identique à l'état normal ici) */
+#next-btn:hover, #score-btn:hover {
+  background-color: #203254;
+}

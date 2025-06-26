@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Drapeaux</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Section de navigation avec boutons pour choisir un continent -->
+<nav>
+  <!-- Bouton pour démarrer le quiz sur l'Europe -->
+  <button onclick="startQuiz('europe')">Europe</button>
+  <!-- Bouton pour démarrer le quiz sur l'Afrique -->
+  <button onclick="startQuiz('afrique')">Africa</button>
+  <!-- Bouton pour démarrer le quiz sur l'Asie -->
+  <button onclick="startQuiz('asie')">Asia</button>
+  <!-- Bouton pour démarrer le quiz sur l'Amérique -->
+  <button onclick="startQuiz('amerique')">America</button>
+</nav>
+
+<!-- Conteneur principal du quiz -->
+<div class="quiz-container">
+  <h2 id="question-title">Choose a continent to start</h2>
+  <img id="flag-image" src="" alt="" style="display:none;">
+  <div id="options"></div>
+  <p id="result"></p>
+
+  <!-- Contrôles du quiz (cachés initialement) -->
+  <div id="controls" style="display:none;">
+    <!-- Bouton pour passer à la question suivante -->
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+    <!-- Bouton pour afficher le score -->
+    <button id="score-btn" onclick="showScore()">Show score</button>
+    <!-- Affichage du score -->
+    <p id="score-display"></p>
+  </div>
+</div>
+
+<!-- Sons utilisés dans le quiz -->
+<audio id="correct-sound" src="sonido-correcto-331225.mp3"></audio>
+<audio id="wrong-sound" src="incorrect-293358.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
